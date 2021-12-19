@@ -1,6 +1,7 @@
 .section-buttons{
     padding-top: 94px;
     padding-bottom: 94px;
+
    }
    
    
@@ -10,17 +11,44 @@
        margin-top: 0px;
        display: flex;
        justify-content: center;
+
+       @media screen and (max-width: 767px){
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
    }
    
    .section-buttons__content .section-buttons__list{
        margin-right: 8px;
    
+       
    }
    
+   .section-buttons__content .section-buttons__list:nth-child(3n){
+
+    @media screen and (max-width: 767px){
+        margin-right: 0px;
+    }
+   }
    
    .section-buttons__content .section-buttons__list:nth-child(5n){
        margin-right: 0px;
    }
+
+   .section-buttons__content .section-buttons__list:nth-child(4n){
+
+    @media screen and (max-width: 767px){
+        margin-top: 12px;
+    }
+   }
+
+   .section-buttons__content .section-buttons__list:nth-child(5n){
+
+    @media screen and (max-width: 767px){
+        margin-top: 12px;
+    }
+   }
+
 
 .section-buttons__button{
     padding-top: 6px;

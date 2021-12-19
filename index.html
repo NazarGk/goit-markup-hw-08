@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body class="model-open">
     <!--Шапка сайта-->
     <header class="header">
             <div class="container main-nav">
             <a  href="" class="main-nav__title">Web<span class="main-nav__link">Studio</span></a>
+            <div class="menu-mobile">
             <nav>
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__text-1 site-nav__text-1--active">Студия</a></li>
@@ -31,6 +32,37 @@
                     <svg class="site-nav-second__icon-smartphone"><use href="./images/icons-head.svg#phone-new"></use></svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
+        </div>
+
+        <button  openMenuBtn type="button"  class="button-open-mobile">
+            <svg class="open-mobile-icon"><use href="./images/icons-gamburger.svg#gamburger"></use></svg></button>
+
+        <div mobileMenu class="button-close-mobile is-hidden">
+            <div class="button-mobile-bgcolor">
+            <button  closeMenuBtn type="button"  class="button-close-mobile"><svg class="close-mobile-icon"><use href="./images/icons-gamburger.svg#gamburger-close"></use></svg></button>
+            <div class="menu-container">
+                <nav>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__text-1 site-nav__text-1--active">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__text-2">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__text-3">Контакты</a></li>
+                </ul>
+                </nav>
+                <ul class="site-nav-second">
+                    <li class="site-nav-second__item"><a href="mailto:info@devstudio.com"  class="site-nav-second__link"  target="_blank" rel="noreferrer noopener">
+                        <svg class="site-nav-second__icon-mail"><use href="./images/icons-head.svg#mail-new"></use></svg>info@devstudio.com</a></li>
+                    <li class="site-nav-second__item"><a href="tel:+380961111111" class="site-nav-second__link">
+                        <svg class="site-nav-second__icon-smartphone"><use href="./images/icons-head.svg#phone-new"></use></svg>+38 096 111 11 11</a></li>
+                </ul>
+                <ul class="mobile-content">
+                    <li class="mobile-content-list"><a href="" class="mobile-content-link">Instagram</a></li>
+                    <li class="mobile-content-list"><a href="" class="mobile-content-link">Twitter</a></li>
+                    <li class="mobile-content-list"><a href="" class="mobile-content-link">Facebook</a></li>
+                    <li class="mobile-content-list"><a href="" class="mobile-content-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     </header>
     <main>
         <!--Герой-->
@@ -43,7 +75,7 @@
             <div class="button-modal__modal">
             <button  data-modal-close type="button"  class="button-modal__close">
                 <svg class="button-modal__close-icon"><use href="./images/btn-close.svg#icon-close"></use></svg></button>
-            
+            <div class="signup_form">
             <form name="signup_form">
                 <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="modal">
@@ -83,6 +115,7 @@
             <button type="submit" class="modal_submit">Отправить</button>
             </form>
         </div>
+        </div>
     </div>
         </section>
         <!--Особенности-->
@@ -94,28 +127,28 @@
                     <svg class="section-content__icon-antena"><use href="./images/icons.svg#antenna"></use></svg>
                 </div>
                     <h3 class="section-content__main">Внимание к деталям</h3>
-                    <p class="section-content__about-main">Идейные соображения, а также <br> начало повседневной работы по <br> формированию позиции.</p>
+                    <p class="section-content__about-main">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="section-content__list">
                     <div class="section-content__box">
                     <svg class="section-content__icon-clock"><use href="./images/icons.svg#clock"></use></svg>
                 </div>
                     <h3 class="section-content__main">Пунктуальность</h3>
-                    <p class="section-content__about-main">Задача организации, в особенности <br> же рамки и место обучения кадров <br> влечет за собой.</p>
+                    <p class="section-content__about-main">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="section-content__list">
                     <div class="section-content__box">
                     <svg class="section-content__icon-diagram"><use href="./images/icons.svg#diagram"></use></svg>
                 </div>
                     <h3 class="section-content__main">Планирование</h3>
-                    <p class="section-content__about-main">Равным образом консультация с <br> широким активом в значительной <br> степени обуславливает.</p>
+                    <p class="section-content__about-main">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="section-content__list">
                     <div class="section-content__box">
                     <svg class="section-content__icon-astronaut"><use href="./images/icons.svg#astronaut"></use></svg>
                 </div>
                     <h3 class="section-content__main">Современные технологии</h3>
-                    <p class="section-content__about-main">Значимость этих проблем настолько <br> очевидна, что реализация плановых <br> заданий.</p>
+                    <p class="section-content__about-main">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </div>
@@ -349,10 +382,10 @@
             </ul>
         </div>
     </section>
-    <!--Футер-->
+    <!-- Футер-->
     <footer class="page-footer">
         <div class="container footer">
-            <div>
+            <div class="page-footer__nav">
             <a href="" class="page-footer__title-down">Web<span class="page-footer__title-down-span">Studio</span></a>
         <address>
         <p class="page-footer__location">г. Киев, пр-т Леси Украинки, 26</p>
@@ -404,10 +437,10 @@
         Подпишитесь на рассылку
     </h3>
     <ul class="form-submit__content">
-        <li>
+        <li class="form-submit__list">
             <input type="email" name="email" class="form-submit__input" placeholder="E-mail">
         </li>
-        <li>
+        <li class="form-submit__list">
             <button type="submit" class="form-submit__button">Подписаться</button>
         </li>
     </ul>
@@ -415,5 +448,6 @@
 </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
