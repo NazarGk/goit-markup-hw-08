@@ -22,8 +22,8 @@
         <div class="menu-mobile">
         <nav>
         <ul class="site-nav">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__text-1 site-nav__text-1--active">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__text-2">Портфолио</a></li>
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__text-1">Студия</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__text-2 site-nav__text-2--active">Портфолио</a></li>
             <li class="site-nav__item"><a href="" class="site-nav__text-3">Контакты</a></li>
         </ul>
         </nav>
@@ -36,17 +36,17 @@
     </div>
     </div>
 
-    <button  data-modal-open type="button"  class="button-open-mobile">
+    <button  data-mobile-open type="button"  class="button-open-mobile">
         <svg class="open-mobile-icon"><use href="./images/icons-gamburger.svg#gamburger"></use></svg></button>
 
-    <div data-modal class="button-close-mobile is-hidden">
+    <div data-mobile class="button-close-mobile is-hidden">
         <div class="button-mobile-bgcolor">
-        <button  data-modal-close type="button"  class="button-close-mobile"><svg class="close-mobile-icon"><use href="./images/icons-gamburger.svg#gamburger-close"></use></svg></button>
+        <button  data-mobile-close type="button"  class="button-close-mobile"><svg class="close-mobile-icon"><use href="./images/icons-gamburger.svg#gamburger-close"></use></svg></button>
         <div class="menu-container">
             <nav>
             <ul class="site-nav">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__text-1 site-nav__text-1--active">Студия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__text-2">Портфолио</a></li>
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__text-1">Студия</a></li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__text-2 site-nav__text-2--active">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__text-3">Контакты</a></li>
             </ul>
             </nav>
@@ -81,7 +81,7 @@
     
         <!--Все Портфолио-->
 
-                    <!-- <ul class="cards-content">
+                    <ul class="cards-content">
                         <li class="cards-content__list">
                             <a href="" class="cards-content__link">
                             <div class="cards-content__animation">
@@ -210,7 +210,7 @@
                                                         </li>
                         </ul>
                     </div>
-                </section> -->
+                </section>
         </main>
         <!--Футер-->
         <footer class="page-footer">
@@ -277,5 +277,6 @@
     </form>
     </div>
         </footer>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -5,6 +5,12 @@ li{
     list-style: none;
 }
 
+img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -18,7 +24,7 @@ body .modal-open{
 .container{
     margin-left: auto;
     margin-right: auto;
-    // width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -26,9 +32,10 @@ body .modal-open{
         width: 480px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 768px;
-    }
+      }
+
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
