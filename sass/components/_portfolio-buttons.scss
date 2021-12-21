@@ -1,3 +1,9 @@
+.button-close-mobile + .hidden-mobile-menu{
+    @media screen and (max-width: 767px){
+        opacity: 0;
+    }
+}
+
 .section-buttons{
     padding-top: 94px;
     padding-bottom: 94px;

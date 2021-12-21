@@ -9,7 +9,8 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
-        justify-content: center;
+        margin-right: -30px;
+        margin-bottom: -30px;
     }
 }
 
@@ -17,15 +18,10 @@
     margin-right: 30px;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) and (max-width: 1199px){
-        flex-basis: calc(100% / 3);
+        flex-basis: calc(100% / 2 - 30px);
     }
 }
 
-.cards-content .cards-content__list:nth-child(2n){
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        margin-right: 0px;
-    }
-}
 
 .cards-content .cards-content__list:nth-last-child(7){
     
@@ -43,13 +39,6 @@
     }
 }
 
-.cards-content .cards-content__list:nth-child(n + 7){
-    margin-bottom: 0px;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        margin-top: 30px;
-    }
-}
 
 
 
